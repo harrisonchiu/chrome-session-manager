@@ -12,7 +12,7 @@
  * ]
  * 
  * 
- * What is saved in chrome's local storage?
+ * Chrome storage save object
  * An object of all sessions and some metadata for user interface
  * 
  * Save Object:
