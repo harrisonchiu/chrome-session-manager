@@ -16,6 +16,6 @@ displayAllSavedSessions();
 // displayMostRecentSessionInDetail();
 displayMostRecentClickedSessionInDetail();
 saveControl();
-// clearControl();
+clearControl();
 openControl();
 deleteControl();
