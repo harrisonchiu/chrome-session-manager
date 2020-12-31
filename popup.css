@@ -1,0 +1,166 @@
+html {
+    background-color: #282A36;
+}
+* {
+    color: white;
+}
+
+#main {
+    /* Width cannot be larger than 792px
+    Chrome wont expand anymore and will just overflow */
+    width: 700px;
+    height: 200px;
+    max-height: 200px;
+    
+    display: inline-box;
+}
+
+/* Scrollbar in the popup */
+::-webkit-scrollbar { 
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: darkgray;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+  }
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+
+/* User controls for session */
+#controls {
+
+}
+
+.controls {
+    background-color: transparent;
+    border: 0px;
+    border-radius: 0px;
+    outline: none;
+    cursor: pointer;
+}
+
+.controls:hover {
+    background-color: #777777;
+}
+
+
+/* List of saved sessions */
+#savedSessionsContainer {
+    width: 49%;
+    margin-left: 1%;
+    float: left;
+
+    height: 100%;
+
+    margin-top: 10px;
+    margin-right: 0px;
+
+    display: inline-flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.savedSession {
+    font-size: 18px;
+    width: 95%;
+    min-height: 30px;
+    max-height: 30px;
+    margin: 5px 0px 5px 0px;
+
+    /* Link text */
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+
+    /* Button design */
+    border: 0px;
+    outline: none;
+    cursor: pointer;
+}
+
+.savedSession:hover:not(.savedSessionSelected) {
+    background-color: #777777;
+}
+
+.savedSessionNotSelected {
+    background-color: #646464;
+}
+
+.savedSessionSelected {
+    background-color:#2962ff;
+}
+
+
+/* Detailed Display */
+#sessionContainer {
+    width: 45%;
+    max-width: 50%;
+    float: left;
+    margin-left: 3%;
+    margin-right: 2%;
+
+    height: 100%;
+
+    display: inline-flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.windowContainer {
+    /* Contains the window and all its tabs */
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.windowTitle {
+    font-size: 18px;
+    font-family: 'IBM plex sans';
+    text-align: left;
+
+    width: 100%;
+    background-color: transparent;
+    border: 0px;
+    outline: none;
+    margin: 0%;
+    cursor: pointer;
+}
+
+.windowTitle:hover {
+    background-color: #777777;
+}
+
+.tabsContainer {
+    width: 100%;
+}
+
+.tabLink {
+    font-size: 18px;
+    font-family: 'IBM plex sans';
+    width: 100%;
+
+    /* Link text */
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+
+    /* Button design */
+    background-color: transparent;
+    border: 0px;
+    outline: none;
+    padding-left: 10%;
+    cursor: pointer;
+}
+
+.tabLink:hover {
+    background-color: #777777;
+}

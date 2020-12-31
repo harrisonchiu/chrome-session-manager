@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "author": "Harrison Chiu",
+    "name": "Browsing Session Manager",
+    "description": "Saves multiple tabs and windows instantly",
+
+    "version": "1.1",
+    "permissions": ["tabs", "storage"],
+
+    "browser_action": {
+        "default_popup": "popup.html"
+    }
+
+}
